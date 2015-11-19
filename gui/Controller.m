@@ -159,6 +159,8 @@ void mobileDeviceNotification(struct am_device_notification_callback_info* info)
 	sharedController = self;
 	_devices = [[NSMutableArray alloc] init];
 	//[self refreshDeviceMenuItem];
+    
+    [self toggleOnOff:self];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
